@@ -1,0 +1,96 @@
+# ===== Compiled class files =====
+*.class
+
+# ===== Log files =====
+*.log
+logs/
+
+# ===== Package / archive files =====
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Keep Maven/Gradle wrapper jars (needed to build)
+!.mvn/wrapper/maven-wrapper.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# ===== Maven =====
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# ===== Gradle =====
+.gradle/
+build/
+out/
+!**/src/main/**/build/
+!**/src/test/**/build/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# ===== Spring Boot =====
+HELP.md
+spring-shell.log
+
+# ===== IntelliJ IDEA =====
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ===== Eclipse / STS =====
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# ===== NetBeans =====
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ===== VS Code =====
+.vscode/
+
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Environment / secrets =====
+.env
+.env.*
+*.pem
+application-local.properties
+application-local.yml
+
+# ===== Databases (local dev) =====
+*.db
+*.sqlite
+*.mv.db
+*.trace.db
+
+# ===== Node (if any project has a frontend) =====
+node_modules/
+
+# ===== JVM crash logs =====
+hs_err_pid*
+replay_pid*
