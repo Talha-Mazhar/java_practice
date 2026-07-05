@@ -39,6 +39,8 @@ public class SpringDataJpaExApplication {
 
 
         System.out.println(repo.findByName("Navin"));
+        System.out.println(repo.findByMarks(80));
+        System.out.println(repo.findByMarksGreaterThan(72));
     }
 
 }
