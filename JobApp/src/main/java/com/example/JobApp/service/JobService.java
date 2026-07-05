@@ -12,8 +12,6 @@ import java.util.List;
 @Service
 public class JobService {
 
-
-
     @Autowired
     private JobRepo repo;
 
@@ -60,5 +58,9 @@ public class JobService {
                         List.of("iOS Development", "Android Development", "Mobile App"))
         ));
         repo.saveAll(jobs);
+    }
+
+    public List<JobPost> search(String keyword) {
+        return repo.findByPostProfileContainingOrPostDescContaining(keyword, keyword);
     }
 }
