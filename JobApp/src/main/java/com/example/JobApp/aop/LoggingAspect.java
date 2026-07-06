@@ -19,7 +19,9 @@ public class LoggingAspect {
 
 //    @Before("execution(* com.example.JobApp).service.JobService.*(..)")
 
-    @Before("execution(* com.example.JobApp).service.JobService.updateJob(..)")
+//    @Before("execution(* com.example.JobApp).service.JobService.updateJob(..)")
+
+    @Before("execution(* com.example.JobApp).service.JobService.updateJob(..) || execution(* com.example.JobApp).service.JobService.addJob(..)")
     public void logMethodCall(JoinPoint jp) {
         LOGGER.info("Method Called" + jp.getSignature().getName());
     }
