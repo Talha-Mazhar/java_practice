@@ -39,4 +39,8 @@ public class LoggingAspect {
         LOGGER.info("Method has returned success" + jp.getSignature().getName());
     }
 
+    @AfterThrowing("execution(* com.example.JobApp).service.JobService.updateJob(..) || execution(* com.example.JobApp).service.JobService.addJob(..)")
+    public void logMethodCrash(JoinPoint jp) {
+        LOGGER.info("Method has some issues" + jp.getSignature().getName());
+    }
 }
