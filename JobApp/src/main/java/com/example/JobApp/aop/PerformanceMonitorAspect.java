@@ -13,7 +13,6 @@ public class PerformanceMonitorAspect {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PerformanceMonitorAspect.class);
 
-
     @Around("execution(* com.example.JobApp.service.JobService.getJob(..))")
     public Object monitorTime(ProceedingJoinPoint jp) throws Throwable {
         long start = System.currentTimeMillis();
