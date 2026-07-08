@@ -21,7 +21,8 @@ public class ValidationAspect {
             LOGGER.info("New value" + postId);
         }
         Object obj = jp.proceed(new Object[]{postId});
-
         return obj;
     }
+
+
 }
